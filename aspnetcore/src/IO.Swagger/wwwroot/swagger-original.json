@@ -729,7 +729,7 @@
       "Order" : {
         "type" : "object",
         "properties" : {
-          "id" : {
+          "id123" : {
             "type" : "integer",
             "format" : "int64"
           },
@@ -760,10 +760,10 @@
           }
         },
         "example" : {
+          "id123" : 0,
           "petId" : 1,
           "quantity" : 5,
           "id3" : 6,
-          "id" : 0,
           "shipDate" : "2000-01-23T04:56:07.000+00:00",
           "complete" : false,
           "status" : "placed"

@@ -27,10 +27,10 @@ namespace IO.Swagger.Models
     public partial class Order : IEquatable<Order>
     { 
         /// <summary>
-        /// Gets or Sets Id
+        /// Gets or Sets Id123
         /// </summary>
-        [DataMember(Name="id")]
-        public long? Id { get; set; }
+        [DataMember(Name="id123")]
+        public long? Id123 { get; set; }
 
         /// <summary>
         /// Gets or Sets Id3
@@ -100,7 +100,7 @@ namespace IO.Swagger.Models
         {
             var sb = new StringBuilder();
             sb.Append("class Order {\n");
-            sb.Append("  Id: ").Append(Id).Append("\n");
+            sb.Append("  Id123: ").Append(Id123).Append("\n");
             sb.Append("  Id3: ").Append(Id3).Append("\n");
             sb.Append("  PetId: ").Append(PetId).Append("\n");
             sb.Append("  Quantity: ").Append(Quantity).Append("\n");
@@ -144,9 +144,9 @@ namespace IO.Swagger.Models
 
             return 
                 (
-                    Id == other.Id ||
-                    Id != null &&
-                    Id.Equals(other.Id)
+                    Id123 == other.Id123 ||
+                    Id123 != null &&
+                    Id123.Equals(other.Id123)
                 ) && 
                 (
                     Id3 == other.Id3 ||
@@ -190,8 +190,8 @@ namespace IO.Swagger.Models
             {
                 var hashCode = 41;
                 // Suitable nullity checks etc, of course :)
-                    if (Id != null)
-                    hashCode = hashCode * 59 + Id.GetHashCode();
+                    if (Id123 != null)
+                    hashCode = hashCode * 59 + Id123.GetHashCode();
                     if (Id3 != null)
                     hashCode = hashCode * 59 + Id3.GetHashCode();
                     if (PetId != null)
